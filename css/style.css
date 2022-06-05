@@ -133,16 +133,19 @@ body{
     border-radius: 50%;
     width: 6px;
     height: 6px;
+    z-index: 100;
 }
 
-.left-sect-img img {
+.right-sect-img img {
     top: 128px;
-    right: 150px;
+    right: 130px;
     position: relative;
-    width: 120%;
-    height: 276px;
+    width: 122%;
+    height: 47vh;
     z-index: 1;
+    margin-left: -37px;
 }
+
 
 /* -------------------------------------------------------- */
 /* --------------------- HOW WE WORKING SECTION ------------- */
@@ -310,10 +313,17 @@ body{
 }
 
 @media (max-width: 991px){
-    .left-sect-img img{
+    .right-sect-img img{
         right: 0px;
-        width: 60%;
+        width: 100%;
+        margin-left: 0px;
         height: auto;
+    }
+    .circle_block_left {
+        display: none;
+    }
+    .circle_block_right {
+        display: none;
     }
     .mt-7 {
         margin-top: 72px;
@@ -327,4 +337,56 @@ body{
         position: relative;
         margin-right: 0px!important;
     }
+}
+
+/* ------------------------------ ANIMATIONS --------------------------------------*/
+
+.pop_p {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+
+
+.desktop-img {
+    opacity: 0;
+}
+
+.desktop-img.animate__animated {
+    opacity: 1;
+}
+
+.consult-img {
+    opacity: 0;
+}
+
+.consult-img.animate__animated {
+    opacity: 1;
+}
+
+.manage {
+    opacity: 0;
+}
+
+.manage.animate__animated  {
+    opacity: 1;
+}
+
+.camp_img {
+    opacity: 0;
+}
+
+.camp_img.animate__animated {
+    opacity: 1;
+}
+
+.globe_img {
+    opacity: 0;
+}
+
+.globe_img.animate__animated {
+    opacity: 1;
 }
